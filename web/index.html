@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Trigonometric</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <form action="TrigServlet" method="post" name="trigServlet">
+            
+            Select the function: <input list="trigonometric" name="trigonometric" placeholder="trigonometric">
+            <datalist id="trigonometric">
+                <option value="sin"></option>
+                <option value="cos"></option>
+                <option value="tg"></option>
+                <option value="ctg"></option>
+            </datalist> </br>
+      
+            Select the method: <input list="method" name="method" placeholder="method">
+            <datalist id="method">
+                <option label="grad" value="grad"></option>
+                <option label="rad" value="rad"></option>
+                </datalist> </br>
+
+            Accuracy: <input type="text" name="accuracy"/> <br/>
+            Write X:  <input type="text" name="x"/> <br/>
+            <input type="submit" value="Ввести данные"/>
+        </form>
+    </body>
+</html>
